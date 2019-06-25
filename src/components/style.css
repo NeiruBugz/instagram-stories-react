@@ -1,0 +1,43 @@
+.story--body {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.story--info {
+	padding: 2rem 0 0 1.2rem;
+	display: flex;
+	align-content: center;
+}
+
+.author--image {
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+}
+
+.story--author {
+	margin-left: 12px;
+	display: flex;
+	align-self: center;
+	color: #fdfdfd;
+	font-size: 1rem;
+}
+
+button {
+	position: absolute;
+	right: 0;
+	top: 200px;
+	content: "";
+	height: 200px;
+	width: 40%;
+	z-index: 20;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
