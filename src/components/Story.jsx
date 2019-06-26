@@ -73,8 +73,12 @@ export default class Story extends React.Component {
     }
   };
 
+  onStoryInterval = () => {
+    setInterval(() => this.onClick(), 15000);
+  };
+
   render() {
-    const { url, heading } = this.state;
+    const { url, heading, urls } = this.state;
     return (
       <>
         <div className="wrapper">
@@ -84,7 +88,9 @@ export default class Story extends React.Component {
               backgroundImage: `url(${url})`,
             }}
           >
-            <div className="progress-bar" />
+            <div className="progress-bar">
+              {urls.map(() => <span className="progress-stripe">&nbsp;</span>)}
+            </div>
             <div className="story--info">
               <img className="author--image" src="https://picsum.photos/1000/1000" alt="Author" />
               <span className="story--author">{heading}</span>

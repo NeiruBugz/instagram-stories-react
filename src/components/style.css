@@ -41,3 +41,25 @@ button {
 	outline: none;
 	cursor: pointer;
 }
+
+.progress-bar {
+	padding-top: 1.2rem;
+	width: 100%;
+	height: 4px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.progress-stripe {
+	width: 100%;
+	border: 1px solid lightgray;
+	background-color: lightgray;
+	margin: 0 .2rem;
+	border-radius: 4px;
+	animation: progressBarAnimation 15s linear;
+}
+
+@keyframes progressBarAnimation {
+	from {width: 0}
+	to {width: 100%}
+}
